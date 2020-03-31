@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: black;
+}
+
+.mainHeader{
+    background-image: linear-gradient(#0c3945, #66afbd);
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    padding-left: 25px;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+}
+
+.headerText{
+    text-align: left;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+
+.tableTile{ /*used for search box*/
+    width: 25%;
+    height: 10%;
+    text-align: center;
+    margin-left:35%;
+    margin-right:35%;
+    border:1px solid #DCDCDC;
+    box-shadow: 5px 5px 8px #888888;
+    padding: 10px;
+    background-color: #527c85;
+    border-radius: 4px;
+    color: white;
+}
+
+.tableTileGraph{
+    text-align: center;
+    margin-left:30%;
+    margin-right:30%;
+    border:1px solid white;
+    box-shadow: 5px 5px 8px #888888;
+    padding: 10px;
+    background-color: #527c85;
+    border-radius: 4px;
+}
+
+.tableTileData{
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+    text-align: left;
+    border:1px solid #DCDCDC;
+    box-shadow: 5px 5px 8px #888888;
+    padding: 10px;
+    background-color: #527c85;
+    border-radius: 4px;
+    border-spacing: 20px;
+    color: white;
+}
+
+.tableTileCompanyInfo{
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+    text-align: center;
+    border:1px solid #DCDCDC;
+    box-shadow: 5px 5px 8px #888888;
+    padding: 10px;
+    background-color: #527c85;
+    border-radius: 4px;
+    border-spacing: 20px;
+    color: white;
+}
+
+
+.button{
+    background-color: #2193b0; /* FIU Blue */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
