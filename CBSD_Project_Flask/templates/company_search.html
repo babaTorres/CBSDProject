@@ -13,7 +13,7 @@
         <tr>
             <td>
                 <a href="" class="cursor-pointer">
-                    <img src="../../images/stockClipart.png" alt="Stock Clipart Placeholder" width="100" height="40"/>
+                    <img src="../static/images/stockClipart.png" alt="Stock Clipart Placeholder" width="100" height="40"/>
                 </a>
             </td>
         </tr>
@@ -24,8 +24,8 @@
             <td>
                 <form action="{{ url_for('search') }}" method="POST" >
 
-                <label>Choose an {{ form.aqiparameter.label }}:</label>
-                    {{ form.aqiparameter }}<br>
+                <label>Enter a symbol:</label>
+                 {{ form.symbol }}<br>
                 <br><br>
 
 
@@ -35,6 +35,6 @@
         </tr>
 
     </table>
-
+{{ company_name}}
 </body>
 </html>
