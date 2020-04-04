@@ -133,7 +133,6 @@ body {
     color: #2F4F4F;
 }
 
-
 .button {
     background-color: #2193b0; /* FIU Blue */
     border: none;
@@ -146,4 +145,9 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }

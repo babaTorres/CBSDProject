@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Find My Stock</title>
-
     <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles.css') }}" type="text/css">
-
 </head>
 <body>
-
+<button onclick="darkMode()">Toggle Dark Mode</button>
     <table class="header2">
         <tr>
             <td>
@@ -28,13 +26,18 @@
                  {{ form.symbol }}<br>
                 <br><br>
 
-
                 <input type="submit" value="Search" class="button">
                 </form>
             </td>
         </tr>
-
     </table>
 {{ company_name}}
+
+<script>
+    function darkMode() {
+        var darkness = document.body;
+        darkness.classList.toggle("dark-mode");
+    }
+</script>
 </body>
 </html>
