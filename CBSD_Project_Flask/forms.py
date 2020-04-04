@@ -24,6 +24,7 @@ def retrieve_quote_parameters(symbol):
 
     # Parse to dictionary
     params = {"companyName":  response_json_file["companyName"],
+              "symbol": response_json_file["symbol"],
               "latestPrice": response_json_file["latestPrice"],
               "avgTotalVolume": response_json_file["avgTotalVolume"],
               "marketCap": response_json_file["marketCap"],
