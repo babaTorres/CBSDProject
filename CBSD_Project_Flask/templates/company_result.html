@@ -6,8 +6,26 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles.css') }}" type="text/css">
 </head>
 <body>
-<button onclick="darkMode()">Toggle Dark Mode</button>
-<br><br>
+    <table class="header" >
+        <tr>
+            <td>
+                <a href="" class="cursor-pointer">
+                    <img src="../static/images/FindMyStockLogo.png" alt="Stock Clipart" width="100" height="40"/>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Find My Stock</b>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="darkMode()" class = button>Toggle Dark Mode</button>
+            </td>
+        </tr>
+    </table>
+<br><br> <!------------------------------------------- End of Header ------------------------------------------->
 
     <table class="tableTile">
         <tr>
@@ -21,17 +39,7 @@
             </td>
         </tr>
     </table>
-
-<table class="tableTile">
-        <tr>
-            <td>
-                About {{company_name}}<br>
-                Specializing in {{industry}}<br>
-                {{description}}<br>
-            </td>
-        </tr>
-    </table>
-
+<br>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div id="basic-area-chart"></div>
@@ -59,27 +67,45 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
+<br>
+
+<table class="tableTile2">
+        <tr>
+            <td>
+                About {{company_name}}<br>
+                Specializing in {{industry}}<br>
+                {{description}}<br>
+            </td>
+        </tr>
+</table>
+<br>
 
 
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright">
-      <a href="https://www.tradingview.com/symbols/{{ company_symbol }}/" rel="noopener" target="_blank">
-          <span class="blue-text">{{ company_symbol }} Profile</span></a> by TradingView</div>
-  <script type="text/javascript"
-          src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
-  {
-  "symbol": "{{ company_symbol }}",
-  "width": 480,
-  "height": 650,
-  "colorTheme": "light",
-  "isTransparent": true,
-  "locale": "en"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
+    <table class=tableTile3>
+        <tr>
+            <td>
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright">
+                <a href="https://www.tradingview.com/symbols/{{ company_symbol }}/" rel="noopener" target="_blank">
+                    <span class="blue-text">{{ company_symbol }} Profile</span></a> by TradingView</div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+                    {
+                       "symbol": "{{ company_symbol }}",
+                        "width": 480,
+                        "height": 650,
+                        "colorTheme": "light",
+                        "isTransparent": true,
+                        "locale": "en"
+                    }
+                </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </td>
+        </tr>
+    </table>
 
 <script>
     function darkMode() {

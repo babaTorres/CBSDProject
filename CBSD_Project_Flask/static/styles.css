@@ -79,9 +79,44 @@ body {
     color: white;
 }
 
+.header {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: #66afbd;
+}
+
 
 .tableTile { /*used for search box*/
-    width: 25%;
+    width: 32%;
+    height: 10%;
+    text-align: center;
+    margin-left:35%;
+    margin-right:35%;
+    border:1px solid #081E3F;
+    box-shadow: 5px 5px 8px #888888;
+    padding: 10px;
+    background-color: #E4F9FD;
+    border-radius: 4px;
+    color: #2F4F4F;
+}
+
+.tableTile2 { /*used for search box*/
+    width: 75%;
+    height: 10%;
+    text-align: center;
+    margin-left:15%;
+    margin-right:35%;
+    border:1px solid #081E3F;
+    box-shadow: 5px 5px 8px #888888;
+    padding: 10px;
+    background-color: #E4F9FD;
+    border-radius: 4px;
+    color: #2F4F4F;
+}
+
+.tableTile3 { /*used for search box*/
+    width: 37%;
     height: 10%;
     text-align: center;
     margin-left:35%;
