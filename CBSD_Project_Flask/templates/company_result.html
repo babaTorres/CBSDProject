@@ -9,6 +9,29 @@
 <button onclick="darkMode()">Toggle Dark Mode</button>
 <br><br>
 
+    <table class="tableTile">
+        <tr>
+            <td>
+                {{ company_name }} ({{ company_symbol }})<br>
+                Latest Price: ${{ latest_price }}<br>
+                Average Total Volume: {{avg_total_volume}}<br>
+                Market Cap: ${{market_cap}}<br>
+                Week 52 High: ${{wk_52_high}}<br>
+                Week 52 Low: ${{wk_52_low}}
+            </td>
+        </tr>
+    </table>
+
+<table class="tableTile">
+        <tr>
+            <td>
+                About {{company_name}}<br>
+                Specializing in {{industry}}<br>
+                {{description}}<br>
+            </td>
+        </tr>
+    </table>
+
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div id="basic-area-chart"></div>
@@ -36,15 +59,7 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
-    <table class="tableTile">
-        <tr>
-            <td>
-                {{ company_symbol }}<br>
-                {{ company_name }}<br>
-                {{ latest_price }}
-            </td>
-        </tr>
-    </table>
+
 
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
