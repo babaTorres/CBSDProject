@@ -31,8 +31,9 @@
             <td>
                 <form action="{{ url_for('search') }}" method="POST" >
 
-                <label>Enter a symbol:</label>
+                <label>Enter a ticker symbol:</label>
                  {{ form.symbol }}<br>
+                    <label>eg "AAPL"</label>
                 <br><br>
 
                 <input type="submit" value="Search" class="button">
